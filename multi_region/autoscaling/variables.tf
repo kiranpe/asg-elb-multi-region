@@ -39,7 +39,7 @@ variable "iam_instance_profile" {
 variable "key_name" {
   description = "A list of key names to assign to the launch configuration"
   type        = string
-  default     = "myasg_key"
+  default     = "myvpc"
 }
 
 
