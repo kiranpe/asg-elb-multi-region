@@ -84,8 +84,6 @@ How TO Test:
        
   --> You can SSH in to Public instance by using public ip but you can't SSH to private instance diectly because you won't get public ip for private instances.
 
-<b>Note: All files need to be modify according to your VPC details and update variables accordingly.<b>
-
 Azure DevOps:
 -------------
   We can set up build for above configuration in Azure DevOps which will connect to AWS and creates above services.
@@ -111,3 +109,6 @@ SetUp:
 --> run the pipeline with pipeline.yaml file
 
 --> Build will connect to AWS and Creates the services and store the terraform state file in S3
+
+<b>Note: All files need to be modify according to your VPC details and update variables accordingly.<b>
+   ----
