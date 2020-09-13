@@ -85,3 +85,27 @@ How TO Test:
   --> You can SSH in to Public instance by using public ip but you can't SSH to private instance diectly because you won't get public ip for private instances.
 
 <b>Note: All files need to be modify according to your VPC details and update variables accordingly.<b>
+
+Azure DevOps:
+-------------
+  We can set up build for above configuration in Azure DevOps which will connect to AWS and creates above services.
+
+SetUp:
+------
+--> Login to AWS Console and Create IAM user with proper access
+
+--> Create S3 bucket and DynamoDB table in AWS Console to store terraform state and lock the file while executing terraform commands
+
+--> Now Login into Azure DevOps Portal
+
+--> download toolkit from market place
+     --> : https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.aws-vsts-tools
+
+--> create "service configuration" in "project settings" in Repos page and add AWS IAM credentials here
+
+--> clone the git repo to Repos in azure
+
+--> create a pipeline job
+    --> run the pipeline with pipeline.yaml file
+
+--> Build will connect to AWS and Creates the services and store the terraform state file in S3
