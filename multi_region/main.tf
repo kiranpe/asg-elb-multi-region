@@ -71,8 +71,6 @@ module "launch_elb" {
 ##########
 #Redis
 ##########
-#module "redis" {
-#  source = "./redis"
-
-#  subnet_ids           = ["subnet-17842671"]
-#}
+module "redis" {
+  source = "./redis"
+}

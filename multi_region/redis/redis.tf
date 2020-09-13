@@ -5,7 +5,7 @@ provider "aws" {
 
 resource "aws_elasticache_subnet_group" "default" {
   name       = var.name
-  subnet_ids = var.subnet_ids
+  subnet_ids = data.aws_subnet_ids.private.ids
 }
 
 resource "aws_elasticache_replication_group" "default" {
