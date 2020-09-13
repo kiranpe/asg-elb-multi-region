@@ -5,15 +5,17 @@
 
 trigger:
 - master
+
 pool:
   vmImage: 'ubuntu-20.04'
+
 steps:
 - task: AmazonWebServices.aws-vsts-tools.AWSShellScript.AWSShellScript@1
-  
+  displayName: 'AWS AGS_ELB'
+
   inputs:
     awsCredentials: 'aws_connect'
     regionName: 'us-east-2'
-    displayName: 'AWS AGS_ELB'
     scriptType: inline
     inlineScript: |
 
@@ -21,5 +23,5 @@ steps:
    
       terraform init
       terraform plan
-      terraform apply --auto-approve
+      #terraform apply --auto-approve
       #terraform destroy --auto-approve
