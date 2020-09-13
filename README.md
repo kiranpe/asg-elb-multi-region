@@ -99,7 +99,8 @@ SetUp:
 --> Now Login into Azure DevOps Portal
 
 --> download toolkit from market place
-     --> : https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.aws-vsts-tools
+ 
+     --> https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.aws-vsts-tools
 
 --> create "service configuration" in "project settings" in Repos page and add AWS IAM credentials here
 
