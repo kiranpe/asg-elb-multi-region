@@ -4,7 +4,7 @@ Shipt Project
 ------------------------------------------------------------------------------
 |Tools:
 |-------
-|AWS + Azure DevOps + Terraform + Docker + ShellScripting + Git
+|<b>AWS + Azure DevOps + Terraform + Docker + ShellScripting + Git<b>
 -------------------------------------------------------------------------------
 
 <b>This configuration launch the ASG, ELB and Redis in 2 Regions.<b>
