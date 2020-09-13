@@ -7,7 +7,7 @@ Shipt Project
 |<b>AWS + Azure DevOps + Terraform + Docker + ShellScripting + Git<b>
 -------------------------------------------------------------------------------
 
-<b>This configuration launch the ASG, ELB and Redis in 2 Regions.<b>
+<b>This configuration, do launch the ASG, ELB and Redis in 2 Regions.<b>
 
 <b>Below is the basic explanation about the set up in one region to get some idea.<b>
 
@@ -88,7 +88,7 @@ Azure DevOps:
 -------------
   We can set up build for above configuration in Azure DevOps which will connect to AWS and creates above services.
 
-SetUp:
+Set Up:
 ------
 --> Login to AWS Console and Create IAM user with proper access
 
