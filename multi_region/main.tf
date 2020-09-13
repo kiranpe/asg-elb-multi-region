@@ -1,11 +1,3 @@
-###############################
-#Security group and Access Key
-###############################
-
-module "access_key" {
- source = "./common"
-}
-
 ############################################
 # Launch configuration and autoscaling group
 ############################################
