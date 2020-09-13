@@ -92,7 +92,7 @@ Set Up:
 ------
 --> Login to AWS Console and Create IAM user with proper access
 
---> Create S3 bucket and DynamoDB table in AWS Console to store terraform state and lock the file while executing terraform commands
+--> Create S3 bucket and DynamoDB table in AWS Console to store terraform state and lock the file while executing terraform commands and update values in backend.tf file
 
 --> Now Login into Azure DevOps Portal
 
