@@ -107,6 +107,7 @@ SetUp:
 --> clone the git repo to Repos in azure
 
 --> create a pipeline job
-    --> run the pipeline with pipeline.yaml file
+ 
+--> run the pipeline with pipeline.yaml file
 
 --> Build will connect to AWS and Creates the services and store the terraform state file in S3
